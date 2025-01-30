@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-from app.ml_model import predict_answer  # Import your ML function
+from ml_model import predict_answer  # If app is the root folder
+  # Import your ML function
 
 app = Flask(__name__)
 CORS(app)  # Enable cross-origin requests
